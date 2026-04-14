@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunsnow - اكتشف العالم</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__social">
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <div class="topbar__contact">
+      <span><i class="fas fa-envelope"></i> Marwaelmogy@isa...</span>
+      <span><i class="fas fa-phone"></i> 19043</span>
+    </div>
+    <div class="topbar__location">
+      <span><i class="fas fa-map-marker-alt"></i> اليمن - 19 وادي النيل</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" role="navigation" aria-label="القائمة الرئيسية">
+  <div class="container navbar__inner">
+    <div class="navbar__logo">
+      <!-- <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <path d="M13 2L22 8.5V17.5L13 24L4 17.5V8.5L13 2Z" fill="#e8a020"/>
+        <path d="M13 6L19 10.5V15.5L13 20L7 15.5V10.5L13 6Z" fill="#fff" opacity="0.3"/>
+        <circle cx="13" cy="13" r="3" fill="#fff"/>
+      </svg> -->
+      <span class="navbar__logo-text">
+        <img src="img/sunsnow.png" width="170px" alt="">
+      </span>
+    </div>
+    <ul class="navbar__links" role="list">
+      <li><a href="index.html" class="nav-link nav-link--active" aria-current="page">الرئيسية</a></li>
+      <li><a href="about.html" class="nav-link">عن الشركة</a></li>
+      <li><a href="packages.html" class="nav-link">الباقات</a></li>
+      <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+    </ul>
+    <button class="btn-login" type="button">تسجيل الدخول</button>
+  </div>
+
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container hero__content">
+    <h1 id="hero-title" class="hero__title">"ابدأ رحلتك هنا، واكتشف العالم! 🌍"</h1>
+    <p class="hero__sub">"استعد لرحلتك القادمة بكل سر وسهولة! استكشف أروع الوجهات حول العالم واحجز مغامرتك المثيرة بنقرة واحدة فقط."</p>
+    <a href="#search" class="btn-gold">اكتشف الآن <i class="fas fa-chevron-left"></i></a>
+  </div>
+</section>
+
+<!-- ===== SEARCH BAR ===== -->
+<!-- <div class="search-wrap">
+  <div class="container search-wrap__inner">
+    <div class="search-box" id="search" role="search">
+      <div class="search-box__fields">
+        <div class="search-field">
+          <label for="s-trip">اختر رحلتك</label>
+          <select id="s-trip">
+            <option value="">اختر...</option>
+            <option>شاطئية</option>
+            <option>جبلية</option>
+            <option>مدينة</option>
+          </select>
+        </div>
+        <div class="search-field">
+          <label for="s-persons">عدد الأفراد</label>
+          <input type="number" id="s-persons" min="1" placeholder="عدد الأفراد">
+        </div>
+        <div class="search-field">
+          <label for="s-date">الرواية</label>
+          <input type="text" id="s-date" placeholder="اختر لغاية...">
+        </div>
+        <button class="search-box__btn" aria-label="بحث">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div> -->
+
+<!-- ===== DESTINATIONS ===== -->
+<section class="section destinations" aria-labelledby="dest-title">
+  <div class="container">
+    <div class="section__head">
+      <h2 id="dest-title" class="section__title">اكتشف المزيد من <span class="gold">الوجهات</span></h2>
+      <div class="section__divider"><span></span><span class="active"></span><span></span></div>
+    </div>
+    <div class="cards-grid">
+
+      <article class="dest-card">
+        <div class="dest-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=210&fit=crop" alt="وجهة سياحية" loading="lazy">
+          <span class="badge badge--green">الأعلى تقييماً</span>
+        </div>
+        <div class="dest-card__body">
+          <h3>عروض سياحية</h3>
+          <p>استمتع بأفضل العروض السياحية شاملة الطيران مع وجبي رحلات مريحة وخدمات متكاملة بأسعار تنافسية.</p>
+          <div class="dest-card__meta">
+            <span><i class="fas fa-plane"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-flag"></i></span>
+          </div>
+          <li><a href="#" class="link-gold">تفاصيل!</a></li>
+        </div>
+      </article>
+
+      <article class="dest-card">
+        <div class="dest-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&h=210&fit=crop" alt="وجهة سياحية" loading="lazy">
+          <span class="badge badge--gold">الأكثر طلباً</span>
+        </div>
+        <div class="dest-card__body">
+          <h3>عروض سياحية شاملة الطيران</h3>
+          <p>استمتع بأفضل العروض السياحية شاملة الطيران مع وجبي رحلات مريحة وخدمات متكاملة بأسعار تنافسية.</p>
+          <div class="dest-card__meta">
+            <span><i class="fas fa-plane"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-flag"></i></span>
+          </div>
+          <a href="package-details.html" class="link-gold">تفاصيل!</a>
+        </div>
+      </article>
+
+      <article class="dest-card">
+        <div class="dest-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&h=210&fit=crop" alt="وجهة سياحية" loading="lazy">
+          <span class="badge badge--blue">وجهة متصلة</span>
+        </div>
+        <div class="dest-card__body">
+          <h3>عروض سياحية شاملة الطيران</h3>
+          <p>استمتع بأفضل العروض السياحية شاملة الطيران مع وجبي رحلات مريحة وخدمات متكاملة بأسعار تنافسية.</p>
+          <div class="dest-card__meta">
+            <span><i class="fas fa-plane"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-flag"></i></span>
+          </div>
+          <a href="package-details.html" class="link-gold">تفاصيل!</a>
+        </div>
+      </article>
+
+    </div>
+    <!-- Pagination dots -->
+    <div class="dots-nav" aria-label="تنقل">
+      <button class="dot" aria-label="1"></button>
+      <button class="dot dot--active" aria-label="2" aria-current="true"></button>
+      <button class="dot" aria-label="3"></button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section class="section why-us" aria-labelledby="why-title">
+  <div class="container">
+    <div class="section__head">
+      <h2 id="why-title" class="section__title">لماذا تختارنا <span class="gold">؟</span></h2>
+      <div class="section__divider"><span></span><span class="active"></span><span></span></div>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-card__icon why-card__icon--purple">
+          <i class="fas fa-tag"></i>
+        </div>
+        <h3>سفر ذكي</h3>
+        <p>نقدم أفضل الأسعار التنافسية مع ضمان جودة الخدمة في كل رحلة</p>
+        <div class="why-card__stat">
+          <span class="why-card__num">1,200</span>
+          <span class="why-card__unit">ريال / رحلة</span>
+        </div>
+      </div>
+      <div class="why-card">
+        <div class="why-card__icon why-card__icon--blue">
+          <i class="fas fa-hotel"></i>
+        </div>
+        <h3> خطط مخصصة</h3>
+        <p>احجز فندقك بسهولة من بين آلاف الخيارات حول العالم بأفضل الأسعار</p>
+        <div class="why-card__stat">
+          <span class="why-card__num">5,000+</span>
+          <span class="why-card__unit">فندق</span>
+        </div>
+      </div>
+      <div class="why-card">
+        <div class="why-card__icon why-card__icon--green">
+          <i class="fas fa-headset"></i>
+        </div>
+        <h3>تجارب حلال </h3>
+        <p>فريق دعم متخصص متاح على مدار الساعة لمساعدتك في أي وقت</p>
+        <div class="why-card__stat">
+          <span class="why-card__num">24/7</span>
+          <span class="why-card__unit">دعم</span>
+        </div>
+      </div>
+      <div class="why-card">
+        <div class="why-card__icon why-card__icon--orange">
+          <i class="fas fa-map-marked-alt"></i>
+        </div>
+        <h3>رحلات اسهل </h3>
+        <p>برامج سياحية متنوعة تناسب جميع الأذواق والميزانيات حول العالم</p>
+        <div class="why-card__stat">
+          <span class="why-card__num">500+</span>
+          <span class="why-card__unit">جولة</span>
+        </div>
+      </div>
+    </div>
+    <!-- Stats bar -->
+    <!-- <div class="stats-bar">
+      <div class="stat">
+        <i class="fas fa-hotel stat__icon"></i>
+        <span class="stat__num">+200</span>
+        <span class="stat__lbl">فندق رائع</span>
+      </div>
+      <div class="stat">
+        <i class="fas fa-plane stat__icon"></i>
+        <span class="stat__num">+5000</span>
+        <span class="stat__lbl">رحلة</span>
+      </div>
+      <div class="stat">
+        <i class="fas fa-smile stat__icon"></i>
+        <span class="stat__num">+2300</span>
+        <span class="stat__lbl">عميل سعيد</span>
+      </div>
+      <div class="stat">
+        <i class="fas fa-globe stat__icon"></i>
+        <span class="stat__num">+90</span>
+        <span class="stat__lbl">دولة</span>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+<!-- ===== GALLERY ===== -->
+<section class="section gallery" aria-labelledby="gallery-title">
+  <div class="container">
+    <div class="section__head">
+      <h2 id="gallery-title" class="section__title">استمتع بمغامرات <span class="gold">لا تُنسى...!</span> 🌍</h2>
+      <div class="section__divider"><span></span><span class="active"></span><span></span></div>
+    </div>
+    <div class="gallery-grid">
+      <a href="#" class="gallery-item" aria-label="إسطنبول">
+        <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=320&h=230&fit=crop" alt="إسطنبول" loading="lazy">
+        <div class="gallery-item__overlay">
+          <span><i class="fas fa-map-marker-alt"></i> إسطنبول</span>
+        </div>
+      </a>
+      <a href="#" class="gallery-item" aria-label="حازن">
+        <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=320&h=230&fit=crop" alt="حازن" loading="lazy">
+        <div class="gallery-item__overlay">
+          <span><i class="fas fa-map-marker-alt"></i> حازن</span>
+        </div>
+      </a>
+      <a href="#" class="gallery-item" aria-label="الأنيق">
+        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=320&h=230&fit=crop" alt="الأنيق" loading="lazy">
+        <div class="gallery-item__overlay">
+          <span><i class="fas fa-map-marker-alt"></i> الأنيق</span>
+        </div>
+      </a>
+      <a href="#" class="gallery-item" aria-label="مصر">
+        <img src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?w=320&h=230&fit=crop" alt="مصر" loading="lazy">
+        <div class="gallery-item__overlay">
+          <span><i class="fas fa-map-marker-alt"></i> مصر</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS ===== -->
+<section class="section testimonials" aria-labelledby="test-title">
+  <div class="container">
+    <div class="section__head">
+      <h2 id="test-title" class="section__title">آراء <span class="gold">عملاؤنا</span></h2>
+      <div class="section__divider"><span></span><span class="active"></span><span></span></div>
+    </div>
+    <!-- Row 1: 3 big cards -->
+    <div class="test-grid">
+      <article class="test-card">
+        <div class="test-card__stars">★★★★★</div>
+        <p class="test-card__text">تجربة رائعة مع Sunsnow! الرحلة كانت منظمة بشكل ممتاز والفريق كان متعاوناً جداً. سأعود بالتأكيد.</p>
+        <div class="test-card__author">
+          <img src="https://i.pravatar.cc/48?img=5" alt="خالد العمري" loading="lazy">
+          <div>
+            <strong>خالد العمري</strong>
+            <span>عميل دائم</span>
+          </div>
+        </div>
+      </article>
+      <article class="test-card">
+        <div class="test-card__stars">★★★★★</div>
+        <p class="test-card__text">أفضل شركة سياحية تعاملت معها. الأسعار معقولة والخدمة احترافية. أنصح الجميع بالتعامل معهم.</p>
+        <div class="test-card__author">
+          <img src="https://i.pravatar.cc/48?img=9" alt="سارة محمد" loading="lazy">
+          <div>
+            <strong>سارة محمد</strong>
+            <span>عميلة جديدة</span>
+          </div>
+        </div>
+      </article>
+      <article class="test-card">
+        <div class="test-card__stars">★★★★☆</div>
+        <p class="test-card__text">رحلة لا تُنسى إلى إسطنبول! كل شيء كان مرتباً من الطيران حتى الفندق. شكراً Sunsnow.</p>
+        <div class="test-card__author">
+          <img src="https://i.pravatar.cc/48?img=15" alt="أحمد الزهراني" loading="lazy">
+          <div>
+            <strong>أحمد الزهراني</strong>
+            <span>مسافر متكرر</span>
+          </div>
+        </div>
+      </article>
+    </div>
+    <!-- Row 2: 4 small cards -->
+    <div class="test-grid test-grid--sm">
+      <article class="test-card test-card--sm">
+        <div class="test-card__author">
+          <img src="https://i.pravatar.cc/40?img=20" alt="نورة السالم" loading="lazy">
+          <div>
+            <strong>نورة السالم</strong>
+            <div class="test-card__stars test-card__stars--sm">★★★★★</div>
+          </div>
+        </div>
+      </article>
+      <article class="test-card test-card--sm">
+        <div class="test-card__author">
+          <img src="https://i.pravatar.cc/40?img=25" alt="فهد الحربي" loading="lazy">
+          <div>
+            <strong>فهد الحربي</strong>
+            <div class="test-card__stars test-card__stars--sm">★★★★★</div>
+          </div>
+        </div>
+      </article>
+      <article class="test-card test-card--sm">
+        <div class="test-card__author">
+          <img src="https://i.pravatar.cc/40?img=30" alt="ريم العتيبي" loading="lazy">
+          <div>
+            <strong>ريم العتيبي</strong>
+            <div class="test-card__stars test-card__stars--sm">★★★★☆</div>
+          </div>
+        </div>
+      </article>
+      <article class="test-card test-card--sm">
+        <div class="test-card__author">
+          <img src="https://i.pravatar.cc/40?img=35" alt="عمر الشمري" loading="lazy">
+          <div>
+            <strong>عمر الشمري</strong>
+            <div class="test-card__stars test-card__stars--sm">★★★★★</div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section contact" id="contact" aria-labelledby="contact-title">
+  <div class="container contact__inner">
+    <!-- Form on the right (RTL = right) -->
+    <div class="contact__form-wrap">
+      <form class="contact__form" novalidate aria-label="نموذج التواصل">
+        <div class="form-row">
+          <label for="c-name">الاسم</label>
+          <input type="text" id="c-name" placeholder="اسمك الكريم" required>
+        </div>
+        <div class="form-row">
+          <label for="c-email">البريد الإلكتروني</label>
+          <input type="email" id="c-email" placeholder="example@email.com" required>
+        </div>
+        <div class="form-row">
+          <label for="c-phone">رقم الهاتف</label>
+          <input type="tel" id="c-phone" placeholder="+966 5X XXX XXXX">
+        </div>
+        <div class="form-row">
+          <label for="c-msg">الرسالة</label>
+          <textarea id="c-msg" rows="4" placeholder="اكتب رسالتك هنا..." required></textarea>
+        </div>
+        <button type="submit" class="btn-gold">إرسال</button>
+      </form>
+    </div>
+    <!-- Info on the left -->
+    <div class="contact__info">
+      <h2 id="contact-title" class="section__title" style="text-align:right;">اتصل <span class="gold">بنا</span></h2>
+      <div class="section__divider" style="justify-content:flex-start; margin-bottom:1.5rem;"><span></span><span class="active"></span><span></span></div>
+      <ul class="contact__list">
+        <li>
+          <span class="contact__icon contact__icon--gold"><i class="fas fa-envelope"></i></span>
+          <span>Marwaelmogy@isa.com</span>
+        </li>
+        <li>
+          <span class="contact__icon contact__icon--gold"><i class="fas fa-phone"></i></span>
+          <span>19043</span>
+        </li>
+        <li>
+          <span class="contact__icon contact__icon--gold"><i class="fas fa-map-marker-alt"></i></span>
+          <span>اليمن - 19 وادي النيل</span>
+        </li>
+        <li>
+          <span class="contact__icon contact__icon--gold"><i class="fas fa-globe"></i></span>
+          <span>www.sunsnow.com</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" role="contentinfo">
+  <div class="container footer__inner">
+    <!-- Map -->
+    <div class="footer__map">
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=44.1,12.7,44.3,12.9&layer=mapnik"
+        width="100%" height="190" style="border:0;border-radius:8px;" loading="lazy"
+        title="خريطة موقع Sunsnow"></iframe>
+      <p class="footer__map-label"><i class="fas fa-map-marker-alt"></i> تواجد في الخريطة</p>
+    </div>
+    <!-- Links -->
+    <div class="footer__col">
+      <h4 class="footer__col-title">الشركة</h4>
+      <ul>
+        <li><a href="about.html">عن الشركة</a></li>
+        <li><a href="packages.html">خدماتنا</a></li>
+        <li><a href="packages.html">الوجهات</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </div>
+    <!-- Brand -->
+    <div class="footer__brand">
+      <div class="footer__logo">
+    
+                <img src="img/sunsnow.png" width="120px" alt="">
+
+      </div>
+      <p class="footer__tagline">اكتشف العالم معنا بكل سهولة وراحة</p>
+      <div class="footer__social">
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2025 Sunsnow. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+</body>
+</html>

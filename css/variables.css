@@ -1,0 +1,23 @@
+:root {
+  /* Colors */
+  --color-navy: #1e2a4a;
+  --color-gold: #e8a020;
+  --color-white: #ffffff;
+  --color-gray-light: #f5f5f5;
+  --color-gray-text: #666666;
+  --color-green: #25d366;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+
+  /* Typography */
+  --font-hero-title: 2.5rem;
+  --font-section-title: 1.8rem;
+  --font-card-title: 1.1rem;
+  --font-body: 0.95rem;
+  --font-small: 0.8rem;
+
+  /* Layout */
+  --container-max-width: 1200px;
+  --container-padding: 0 1.5rem;
+  --border-radius-card: 12px;
+  --border-radius-btn: 8px;
+}

@@ -1,0 +1,117 @@
+.destinations {
+  background: var(--color-gray-light);
+  padding: 5rem 0 3rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.section-title {
+  font-size: var(--font-section-title);
+  font-weight: 800;
+  color: var(--color-navy);
+  margin-bottom: 0.75rem;
+}
+
+.section-divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.divider-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+  display: inline-block;
+}
+
+.divider-dot--gold {
+  background: var(--color-gold);
+  width: 28px;
+  border-radius: 4px;
+}
+
+.destinations__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+/* Destination Card */
+.destination-card {
+  background: var(--color-white);
+  border-radius: var(--border-radius-card);
+  box-shadow: 0 2px 12px var(--color-shadow);
+  overflow: hidden;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.14);
+}
+
+.destination-card__image-wrapper {
+  position: relative;
+}
+
+.destination-card__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.badge {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 0.75rem;
+  padding: 0.25rem 0.7rem;
+  border-radius: 20px;
+  font-size: var(--font-small);
+  font-weight: 700;
+  border: 1.5px solid currentColor;
+}
+
+.badge--popular   { background: rgba(255,255,255,0.9); color: var(--color-gold); }
+.badge--top-rated { background: rgba(255,255,255,0.9); color: #4caf50; }
+.badge--connected { background: rgba(255,255,255,0.9); color: #2196f3; }
+
+.destination-card__body {
+  padding: 1rem 1.1rem;
+}
+
+.destination-card__title {
+  font-size: var(--font-card-title);
+  font-weight: 700;
+  color: var(--color-navy);
+  margin-bottom: 0.4rem;
+}
+
+.destination-card__desc {
+  font-size: var(--font-small);
+  color: var(--color-gray-text);
+  line-height: 1.7;
+  margin-bottom: 0.75rem;
+}
+
+.destination-card__meta {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.details-link {
+  color: var(--color-gold);
+  font-weight: 700;
+  font-size: var(--font-small);
+  transition: text-decoration 0.2s;
+}
+
+.details-link:hover { text-decoration: underline; }

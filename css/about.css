@@ -1,0 +1,132 @@
+/* ===== PAGE HERO (breadcrumb banner) ===== */
+.page-hero {
+  background: #1e2a4a;
+  color: #fff;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.page-hero__title {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: rgba(255,255,255,0.7);
+}
+
+.breadcrumb a {
+  color: rgba(255,255,255,0.7);
+  transition: color 0.2s;
+}
+
+.breadcrumb a:hover { color: #e8a020; }
+
+.breadcrumb i {
+  font-size: 0.65rem;
+  color: rgba(255,255,255,0.4);
+}
+
+.breadcrumb span[aria-current] {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* ===== WHY CARDS — about page variant ===== */
+/* Cards on about page have "اعرف أكثر" link instead of stat */
+.why-card__icon--teal { background: #1abc9c; }
+
+/* ===== TESTIMONIALS — about page variant ===== */
+/* Star + empty star layout at top of card */
+.test-card__top {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 0.7rem;
+}
+
+.test-card__star-empty {
+  color: #e8a020;
+  font-size: 0.9rem;
+}
+
+/* 4-column row 1 on about page */
+.test-grid--4col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Peek card (partially visible 4th card) */
+.test-card--peek {
+  opacity: 0.6;
+}
+
+/* ===== FOOTER — about page contact list ===== */
+.footer__contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.footer__contact-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.75);
+  line-height: 1.5;
+}
+
+.footer__contact-icon {
+  color: #e8a020;
+  font-size: 0.85rem;
+  margin-top: 0.1rem;
+  flex-shrink: 0;
+}
+
+/* Footer brand tagline — longer on about page */
+.footer__tagline {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  max-width: 260px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer grid — about page: map | contact | brand */
+.footer__inner {
+  grid-template-columns: 1fr 1fr 1.2fr;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1023px) {
+  .test-grid { grid-template-columns: repeat(2, 1fr); }
+  .test-card--peek { display: none; }
+}
+
+@media (max-width: 767px) {
+  .page-hero__title { font-size: 1.5rem; }
+  .test-grid { grid-template-columns: 1fr; }
+  .test-card--peek { display: none; }
+  .footer__inner { grid-template-columns: 1fr; }
+}
+
+/* 4-col grid for row 1 testimonials */
+.test-grid--4col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 1023px) {
+  .test-grid--4col { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 767px) {
+  .test-grid--4col { grid-template-columns: 1fr; }
+}

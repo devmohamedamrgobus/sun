@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunsnow - الباقات</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/packages.css">
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__social">
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <div class="topbar__contact">
+      <span><i class="fas fa-envelope"></i> Marwaelmogy@isa...</span>
+      <span><i class="fas fa-phone"></i> 19043</span>
+    </div>
+    <div class="topbar__location">
+      <span><i class="fas fa-map-marker-alt"></i> اليمن - 19 وادي النيل</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" role="navigation" aria-label="القائمة الرئيسية">
+  <div class="container navbar__inner">
+    <div class="navbar__logo">
+      <span class="navbar__logo-text">
+        <img src="img/sunsnow.png" width="170" alt="Sunsnow">
+      </span>
+    </div>
+    <ul class="navbar__links" role="list">
+      <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+      <li><a href="about.html" class="nav-link">عن الشركة</a></li>
+      <li><a href="packages.html" class="nav-link nav-link--active" aria-current="page">الباقات</a></li>
+      <li><a href="index.html#contact" class="nav-link">تواصل معنا</a></li>
+    </ul>
+    <button class="btn-login" type="button">تسجيل الدخول</button>
+  </div>
+</nav>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero" aria-label="الباقات">
+  <div class="container page-hero__inner">
+    <h1 class="page-hero__title">الباقات</h1>
+    <nav class="breadcrumb" aria-label="مسار التنقل">
+      <a href="index.html">الرئيسية</a>
+      <span aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+      <span aria-current="page">الباقات</span>
+    </nav>
+  </div>
+</section>
+
+<!-- ===== PACKAGES SECTION ===== -->
+<section class="section packages-section">
+  <div class="container">
+
+    <!-- Search + Filters -->
+    <div class="pkg-toolbar">
+      <div class="pkg-search">
+        <i class="fas fa-search pkg-search__icon"></i>
+        <input type="search" placeholder="ابحث هنا..." aria-label="البحث في الباكدجات">
+      </div>
+      <div class="pkg-filters">
+        <button class="pkg-filter pkg-filter--active" type="button">الكل</button>
+        <label class="pkg-filter-check">
+          <input type="checkbox" name="filter" value="family"> عائلة
+        </label>
+        <label class="pkg-filter-check">
+          <input type="checkbox" name="filter" value="couple"> وجهة متصلة
+        </label>
+      </div>
+    </div>
+
+    <!-- Cards Grid -->
+    <div class="pkg-grid">
+
+      <!-- Card 1 -->
+      <article class="pkg-card">
+        <div class="pkg-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=400&h=210&fit=crop" alt="رحلة اسطنبول المميزة" loading="lazy">
+          <span class="badge badge--green">الأعلى تقييماً</span>
+        </div>
+        <div class="pkg-card__body">
+          <h3 class="pkg-card__title">رحلة اسطنبول المميزة</h3>
+          <p class="pkg-card__desc">استمتع بأفضل العروض السياحية شاملة الطيران مع وجبي رحلات مريحة وخدمات متكاملة بأسعار تنافسية.</p>
+          <div class="pkg-card__meta">
+            <span><i class="fas fa-plane"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-flag"></i></span>
+          </div>
+          <div class="pkg-card__footer">
+            <span class="pkg-card__price">20,000 EGP</span>
+            <a href="package-details.html" class="btn-gold pkg-card__btn">عرض التفاصيل</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="pkg-card">
+        <div class="pkg-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&h=210&fit=crop" alt="رحلة اسطنبول المميزة" loading="lazy">
+          <span class="badge badge--gold">الأكثر طلباً</span>
+        </div>
+        <div class="pkg-card__body">
+          <h3 class="pkg-card__title">رحلة اسطنبول المميزة</h3>
+          <p class="pkg-card__desc">استمتع بأفضل العروض السياحية شاملة الطيران مع وجبي رحلات مريحة وخدمات متكاملة بأسعار تنافسية.</p>
+          <div class="pkg-card__meta">
+            <span><i class="fas fa-plane"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-flag"></i></span>
+          </div>
+          <div class="pkg-card__footer">
+            <span class="pkg-card__price">20,000 EGP</span>
+            <a href="package-details.html" class="btn-gold pkg-card__btn">عرض التفاصيل</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="pkg-card">
+        <div class="pkg-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&h=210&fit=crop" alt="رحلة اسطنبول المميزة" loading="lazy">
+          <span class="badge badge--blue">وجهة متصلة</span>
+        </div>
+        <div class="pkg-card__body">
+          <h3 class="pkg-card__title">رحلة اسطنبول المميزة</h3>
+          <p class="pkg-card__desc">استمتع بأفضل العروض السياحية شاملة الطيران مع وجبي رحلات مريحة وخدمات متكاملة بأسعار تنافسية.</p>
+          <div class="pkg-card__meta">
+            <span><i class="fas fa-plane"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-flag"></i></span>
+          </div>
+          <div class="pkg-card__footer">
+            <span class="pkg-card__price">20,000 EGP</span>
+            <a href="package-details.html" class="btn-gold pkg-card__btn">عرض التفاصيل</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="pkg-card">
+        <div class="pkg-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400&h=210&fit=crop" alt="رحلة اسطنبول المميزة" loading="lazy">
+          <span class="badge badge--green">الأعلى تقييماً</span>
+        </div>
+        <div class="pkg-card__body">
+          <h3 class="pkg-card__title">رحلة اسطنبول المميزة</h3>
+          <p class="pkg-card__desc">استمتع بأفضل العروض السياحية شاملة الطيران مع وجبي رحلات مريحة وخدمات متكاملة بأسعار تنافسية.</p>
+          <div class="pkg-card__meta">
+            <span><i class="fas fa-plane"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-flag"></i></span>
+          </div>
+          <div class="pkg-card__footer">
+            <span class="pkg-card__price">20,000 EGP</span>
+            <a href="package-details.html" class="btn-gold pkg-card__btn">عرض التفاصيل</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="pkg-card">
+        <div class="pkg-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1539037116277-4db20889f2d4?w=400&h=210&fit=crop" alt="رحلة اسطنبول المميزة" loading="lazy">
+          <span class="badge badge--gold">الأكثر طلباً</span>
+        </div>
+        <div class="pkg-card__body">
+          <h3 class="pkg-card__title">رحلة اسطنبول المميزة</h3>
+          <p class="pkg-card__desc">استمتع بأفضل العروض السياحية شاملة الطيران مع وجبي رحلات مريحة وخدمات متكاملة بأسعار تنافسية.</p>
+          <div class="pkg-card__meta">
+            <span><i class="fas fa-plane"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-flag"></i></span>
+          </div>
+          <div class="pkg-card__footer">
+            <span class="pkg-card__price">20,000 EGP</span>
+            <a href="package-details.html" class="btn-gold pkg-card__btn">عرض التفاصيل</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 6 -->
+      <article class="pkg-card">
+        <div class="pkg-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=210&fit=crop" alt="رحلة اسطنبول المميزة" loading="lazy">
+          <span class="badge badge--blue">وجهة متصلة</span>
+        </div>
+        <div class="pkg-card__body">
+          <h3 class="pkg-card__title">رحلة اسطنبول المميزة</h3>
+          <p class="pkg-card__desc">استمتع بأفضل العروض السياحية شاملة الطيران مع وجبي رحلات مريحة وخدمات متكاملة بأسعار تنافسية.</p>
+          <div class="pkg-card__meta">
+            <span><i class="fas fa-plane"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-flag"></i></span>
+          </div>
+          <div class="pkg-card__footer">
+            <span class="pkg-card__price">20,000 EGP</span>
+            <a href="package-details.html" class="btn-gold pkg-card__btn">عرض التفاصيل</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 7 -->
+      <article class="pkg-card">
+        <div class="pkg-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1524231757912-21f4fe3a7200?w=400&h=210&fit=crop" alt="رحلة اسطنبول المميزة" loading="lazy">
+          <span class="badge badge--green">الأعلى تقييماً</span>
+        </div>
+        <div class="pkg-card__body">
+          <h3 class="pkg-card__title">رحلة اسطنبول المميزة</h3>
+          <p class="pkg-card__desc">استمتع بأفضل العروض السياحية شاملة الطيران مع وجبي رحلات مريحة وخدمات متكاملة بأسعار تنافسية.</p>
+          <div class="pkg-card__meta">
+            <span><i class="fas fa-plane"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-flag"></i></span>
+          </div>
+          <div class="pkg-card__footer">
+            <span class="pkg-card__price">20,000 EGP</span>
+            <a href="package-details.html" class="btn-gold pkg-card__btn">عرض التفاصيل</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 8 -->
+      <article class="pkg-card">
+        <div class="pkg-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=400&h=210&fit=crop" alt="رحلة اسطنبول المميزة" loading="lazy">
+          <span class="badge badge--gold">الأكثر طلباً</span>
+        </div>
+        <div class="pkg-card__body">
+          <h3 class="pkg-card__title">رحلة اسطنبول المميزة</h3>
+          <p class="pkg-card__desc">استمتع بأفضل العروض السياحية شاملة الطيران مع وجبي رحلات مريحة وخدمات متكاملة بأسعار تنافسية.</p>
+          <div class="pkg-card__meta">
+            <span><i class="fas fa-plane"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-flag"></i></span>
+          </div>
+          <div class="pkg-card__footer">
+            <span class="pkg-card__price">20,000 EGP</span>
+            <a href="package-details.html" class="btn-gold pkg-card__btn">عرض التفاصيل</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 9 -->
+      <article class="pkg-card">
+        <div class="pkg-card__img-wrap">
+          <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=400&h=210&fit=crop" alt="رحلة اسطنبول المميزة" loading="lazy">
+          <span class="badge badge--blue">وجهة متصلة</span>
+        </div>
+        <div class="pkg-card__body">
+          <h3 class="pkg-card__title">رحلة اسطنبول المميزة</h3>
+          <p class="pkg-card__desc">استمتع بأفضل العروض السياحية شاملة الطيران مع وجبي رحلات مريحة وخدمات متكاملة بأسعار تنافسية.</p>
+          <div class="pkg-card__meta">
+            <span><i class="fas fa-plane"></i></span>
+            <span><i class="fas fa-star"></i></span>
+            <span><i class="fas fa-flag"></i></span>
+          </div>
+          <div class="pkg-card__footer">
+            <span class="pkg-card__price">20,000 EGP</span>
+            <a href="package-details.html" class="btn-gold pkg-card__btn">عرض التفاصيل</a>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- end pkg-grid -->
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" role="contentinfo">
+  <div class="container footer__inner">
+    <div class="footer__map">
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=44.1,12.7,44.3,12.9&layer=mapnik"
+        width="100%" height="190" style="border:0;border-radius:8px;" loading="lazy"
+        title="خريطة موقع Sunsnow"></iframe>
+      <p class="footer__map-label"><i class="fas fa-map-marker-alt"></i> تواجد في الخريطة</p>
+    </div>
+    <div class="footer__col">
+      <h4 class="footer__col-title">اتصل بنا</h4>
+      <ul class="footer__contact-list">
+        <li>
+          <span class="footer__contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+          <span>صنعاء - شارع الحرية الجمهورية</span>
+        </li>
+        <li>
+          <span class="footer__contact-icon"><i class="fas fa-phone"></i></span>
+          <span>+96652206059</span>
+        </li>
+        <li>
+          <span class="footer__contact-icon"><i class="fas fa-envelope"></i></span>
+          <span>turathuna.zah@gmail.com</span>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__brand">
+      <div class="footer__logo">
+        <img src="img/sunsnow.png" width="120" alt="Sunsnow">
+      </div>
+      <p class="footer__tagline">فضل أ الفاة في الشكل وليس الجوهر، ولستخدم في الفنون والتصميم، ولم يلبث أن انتشر في الطباعة والتنضيد الإلكتروني.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2025 Sunsnow. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+</body>
+</html>
+

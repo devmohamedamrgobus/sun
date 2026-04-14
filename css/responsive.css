@@ -1,0 +1,95 @@
+/* Mobile First — base styles target mobile */
+
+/* Tablet (≥ 768px) */
+@media (min-width: 768px) {
+  .destinations__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .search-bar__fields {
+    flex-direction: row;
+  }
+
+  .top-bar__inner {
+    flex-direction: row;
+  }
+}
+
+/* Desktop (≥ 1024px) */
+@media (min-width: 1024px) {
+  .destinations__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .navbar__links {
+    display: flex;
+  }
+}
+
+/* Mobile (< 768px) */
+@media (max-width: 767px) {
+  :root {
+    --font-hero-title: 1.6rem;
+    --font-section-title: 1.3rem;
+  }
+
+  .top-bar__inner {
+    flex-direction: column;
+    gap: 0.4rem;
+    text-align: center;
+  }
+
+  .navbar__links {
+    display: none;
+  }
+
+  .navbar__inner {
+    justify-content: space-between;
+  }
+
+  .hero {
+    padding: 3rem 0 5rem;
+  }
+
+  .search-bar {
+    margin: -2rem 1rem 0;
+    padding: 1rem;
+  }
+
+  .search-bar__fields {
+    flex-direction: column;
+  }
+
+  .search-avatar {
+    display: none;
+  }
+
+  .destinations__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .chat-icon {
+    top: 0.75rem;
+    right: 0.75rem;
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+}
+
+/* Why Us */
+@media (max-width: 767px) {
+  .why-us__grid { grid-template-columns: repeat(2, 1fr); }
+  .why-us__stats { flex-wrap: wrap; gap: 1.5rem; }
+  .gallery__grid { grid-template-columns: repeat(2, 1fr); }
+  .testimonials__grid { grid-template-columns: 1fr; }
+  .testimonials__grid--sm { grid-template-columns: repeat(2, 1fr); }
+  .contact__inner { grid-template-columns: 1fr; }
+  .footer__inner { grid-template-columns: 1fr; }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .why-us__grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery__grid { grid-template-columns: repeat(2, 1fr); }
+  .footer__inner { grid-template-columns: 1fr 1fr; }
+}

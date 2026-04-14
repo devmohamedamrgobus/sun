@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunsnow - تفاصيل الباقة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/package-details.css">
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<div class="topbar">
+  <div class="container topbar__inner">
+    <div class="topbar__social">
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+    </div>
+    <div class="topbar__contact">
+      <span><i class="fas fa-envelope"></i> Marwaelmogy@isa...</span>
+      <span><i class="fas fa-phone"></i> 19043</span>
+    </div>
+    <div class="topbar__location">
+      <span><i class="fas fa-map-marker-alt"></i> اليمن - 19 وادي النيل</span>
+    </div>
+  </div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" role="navigation" aria-label="القائمة الرئيسية">
+  <div class="container navbar__inner">
+    <div class="navbar__logo">
+      <span class="navbar__logo-text">
+        <img src="img/sunsnow.png" width="170" alt="Sunsnow">
+      </span>
+    </div>
+    <ul class="navbar__links" role="list">
+      <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+      <li><a href="about.html" class="nav-link">عن الشركة</a></li>
+      <li><a href="packages.html" class="nav-link nav-link--active" aria-current="page">الباقات</a></li>
+      <li><a href="index.html#contact" class="nav-link">تواصل معنا</a></li>
+    </ul>
+    <button class="btn-login" type="button">تسجيل الدخول</button>
+  </div>
+</nav>
+
+<!-- ===== PAGE HERO ===== -->
+<section class="page-hero" aria-label="تفاصيل الباقة">
+  <div class="container page-hero__inner">
+    <h1 class="page-hero__title">الباقات</h1>
+    <nav class="breadcrumb" aria-label="مسار التنقل">
+      <a href="index.html">الرئيسية</a>
+      <span aria-hidden="true"><i class="fas fa-chevron-left"></i></span>
+      <a href="packages.html">الباقات</a>
+    </nav>
+  </div>
+</section>
+
+<!-- ===== DETAILS CONTENT ===== -->
+<main class="section pkg-details">
+  <div class="container">
+
+    <!-- Main Hero Image -->
+    <div class="pkg-details__hero-img">
+      <img
+        src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1100&h=480&fit=crop"
+        alt="رحلة باريس المميزة"
+        loading="eager"
+      >
+    </div>
+
+    <!-- Thumbnail Gallery -->
+    <div class="pkg-details__thumbs" role="list" aria-label="صور الرحلة">
+      <button class="pkg-thumb pkg-thumb--active" type="button" aria-label="صورة 1">
+        <img src="https://images.unsplash.com/photo-1499856871958-5b9627545d1a?w=160&h=100&fit=crop" alt="باريس 1" loading="lazy">
+      </button>
+      <button class="pkg-thumb" type="button" aria-label="صورة 2">
+        <img src="https://images.unsplash.com/photo-1431274172761-fca41d930114?w=160&h=100&fit=crop" alt="باريس 2" loading="lazy">
+      </button>
+      <button class="pkg-thumb" type="button" aria-label="صورة 3">
+        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=160&h=100&fit=crop" alt="باريس 3" loading="lazy">
+      </button>
+      <button class="pkg-thumb" type="button" aria-label="صورة 4">
+        <img src="https://images.unsplash.com/photo-1520939817895-060bdaf4fe1b?w=160&h=100&fit=crop" alt="باريس 4" loading="lazy">
+      </button>
+      <button class="pkg-thumb" type="button" aria-label="صورة 5">
+        <img src="https://images.unsplash.com/photo-1543349689-9a4d426bee8e?w=160&h=100&fit=crop" alt="باريس 5" loading="lazy">
+      </button>
+      <button class="pkg-thumb" type="button" aria-label="صورة 6">
+        <img src="https://images.unsplash.com/photo-1471623432079-b009d30b6729?w=160&h=100&fit=crop" alt="باريس 6" loading="lazy">
+      </button>
+    </div>
+
+    <!-- Description + Sections -->
+    <div class="pkg-details__body">
+
+      <!-- وصف الرحلة -->
+      <div class="pkg-section">
+        <h2 class="pkg-section__title">
+          <i class="fas fa-info-circle pkg-section__icon pkg-section__icon--gold"></i>
+          وصف الرحلة
+        </h2>
+        <div class="pkg-section__divider"><span></span><span class="active"></span><span></span></div>
+        <p class="pkg-section__text">
+          اكتشف باريس في جولة ممتعة لا تُنسى. إنها مدينة من طراز فريد، وتتميز بمعالمها الشهيرة التي تجذب الزوار من كل أنحاء العالم. "استمتع برحلة شاملة من الدرجة الأولى والتجول في أحياء المدينة الساحرة، مع زيارة أشهر المعالم السياحية كبرج إيفل والمتاحف الرائعة والمطاعم الفاخرة. والمتاحف، وتجد مساحة للتأمل في الشوارع الجميلة والاستمتاع بكل سحرها."
+        </p>
+      </div>
+
+      <!-- الأنشطة -->
+      <div class="pkg-section">
+        <h2 class="pkg-section__title">
+          <i class="fas fa-running pkg-section__icon pkg-section__icon--gold"></i>
+          الأنشطة
+        </h2>
+        <div class="pkg-section__divider"><span></span><span class="active"></span><span></span></div>
+        <ul class="pkg-activities">
+          <li class="pkg-activity">
+            <i class="fas fa-ship pkg-activity__icon"></i>
+            <span>رحلة بحرية قائمة إلى خليج إيزاريج وجزيرة هولا هولا</span>
+          </li>
+          <li class="pkg-activity">
+            <i class="fas fa-clock pkg-activity__icon"></i>
+            <span>مدة الرحلة</span>
+          </li>
+          <li class="pkg-activity">
+            <i class="fas fa-clock pkg-activity__icon"></i>
+            <span>رقم 6 أكثر صباحاً</span>
+          </li>
+          <li class="pkg-activity pkg-activity--sub">
+            <i class="fas fa-check pkg-activity__icon pkg-activity__icon--gold"></i>
+            <span>مشروبات غازية ومياه معدنية شاملة على متن القارب</span>
+          </li>
+          <li class="pkg-activity pkg-activity--sub">
+            <i class="fas fa-check pkg-activity__icon pkg-activity__icon--gold"></i>
+            <span>الإفطار من طاقم القارب على متن القارب (إفطار إضافي)</span>
+          </li>
+          <li class="pkg-activity pkg-activity--sub">
+            <i class="fas fa-check pkg-activity__icon pkg-activity__icon--gold"></i>
+            <span>خدمة التوصيل من وإلى الفندق بسيارة خاصة مريحة</span>
+          </li>
+          <li class="pkg-activity pkg-activity--sub">
+            <i class="fas fa-check pkg-activity__icon pkg-activity__icon--gold"></i>
+            <span>دليل متمرس تجربة</span>
+          </li>
+          <li class="pkg-activity pkg-activity--sub">
+            <i class="fas fa-clock pkg-activity__icon"></i>
+            <span>المدة: 8 ساعات</span>
+          </li>
+          <li class="pkg-activity pkg-activity--sub">
+            <i class="fas fa-check pkg-activity__icon pkg-activity__icon--gold"></i>
+            <span>تشمل تسكين 4-5 نجوم في أفضل 1 من 50 نجوم 50 فندق</span>
+          </li>
+          <li class="pkg-activity pkg-activity--sub">
+            <i class="fas fa-check pkg-activity__icon pkg-activity__icon--gold"></i>
+            <span>4.5</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- الأمان -->
+      <div class="pkg-section">
+        <h2 class="pkg-section__title">
+          <i class="fas fa-shield-alt pkg-section__icon pkg-section__icon--gold"></i>
+          الأمان
+        </h2>
+        <div class="pkg-section__divider"><span></span><span class="active"></span><span></span></div>
+        <ul class="pkg-safety">
+          <li>
+            <i class="fas fa-dot-circle pkg-safety__bullet"></i>
+            <div>
+              <strong>إرشادات السلامة الهامة:</strong>
+              <span>الالتزام بإرشادات المرشدين السياحيين والقائد في جميع الأنشطة.</span>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-dot-circle pkg-safety__bullet"></i>
+            <div>
+              <strong>معدات السلامة:</strong>
+              <span>تأكد من استخدام معدات السلامة المناسبة أثناء الأنشطة البحرية أو المرتفعات أو الجبال.</span>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-dot-circle pkg-safety__bullet"></i>
+            <div>
+              <strong>الطقس السائد:</strong>
+              <span>تحقق دائماً من حالة الطقس قبل الأنشطة الخارجية. تجنب الخروج في حالات الطقس السيئة.</span>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-dot-circle pkg-safety__bullet"></i>
+            <div>
+              <strong>إجراءات الطوارئ:</strong>
+              <span>تعرف على إجراءات الطوارئ وتأكد من وجود بطاقة تعريفية معك في جميع الأوقات.</span>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-dot-circle pkg-safety__bullet"></i>
+            <div>
+              <strong>التأمين الصحي:</strong>
+              <span>يُنصح بالحصول على تأمين صحي وتأمين سفر شامل قبل المغادرة.</span>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-dot-circle pkg-safety__bullet"></i>
+            <div>
+              <strong>وسائل التنقل:</strong>
+              <span>تحت تصرفك سيارات خاصة ومريحة وخدمات متكاملة على مدار الساعة.</span>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-dot-circle pkg-safety__bullet"></i>
+            <div>
+              <strong>إرشادات السفر:</strong>
+              <span>اطلع على قوانين البلد الذي تزوره واحترس الكامل والاكتشاف الكامل لتجارب السفر.</span>
+            </div>
+          </li>
+          <li>
+            <i class="fas fa-dot-circle pkg-safety__bullet"></i>
+            <div>
+              <strong>التواصل الفعال:</strong>
+              <span>احرص على استخدام وسائل التواصل المتاحة وتواصل مع أقاربك أو أصدقائك.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div><!-- end pkg-details__body -->
+  </div>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" role="contentinfo">
+  <div class="container footer__inner">
+    <div class="footer__map">
+      <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=44.1,12.7,44.3,12.9&layer=mapnik"
+        width="100%" height="190" style="border:0;border-radius:8px;" loading="lazy"
+        title="خريطة موقع Sunsnow"></iframe>
+      <p class="footer__map-label"><i class="fas fa-map-marker-alt"></i> تواجد في الخريطة</p>
+    </div>
+    <div class="footer__col">
+      <h4 class="footer__col-title">اتصل بنا</h4>
+      <ul class="footer__contact-list">
+        <li>
+          <span class="footer__contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+          <span>صنعاء - شارع الحرية الجمهورية</span>
+        </li>
+        <li>
+          <span class="footer__contact-icon"><i class="fas fa-phone"></i></span>
+          <span>+96652206059</span>
+        </li>
+        <li>
+          <span class="footer__contact-icon"><i class="fas fa-envelope"></i></span>
+          <span>turathuna.zah@gmail.com</span>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__brand">
+      <div class="footer__logo">
+        <img src="img/sunsnow.png" width="120" alt="Sunsnow">
+      </div>
+      <p class="footer__tagline">فضل أ الفاة في الشكل وليس الجوهر، ولستخدم في الفنون والتصميم، ولم يلبث أن انتشر في الطباعة والتنضيد الإلكتروني.</p>
+      <div class="footer__social">
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p>© 2025 Sunsnow. جميع الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+<!-- Thumbnail switcher script -->
+<script>
+  const thumbs = document.querySelectorAll('.pkg-thumb');
+  const heroImg = document.querySelector('.pkg-details__hero-img img');
+  thumbs.forEach(btn => {
+    btn.addEventListener('click', () => {
+      thumbs.forEach(t => t.classList.remove('pkg-thumb--active'));
+      btn.classList.add('pkg-thumb--active');
+      const src = btn.querySelector('img').src.replace(/w=\d+&h=\d+/, 'w=1100&h=480');
+      heroImg.src = src;
+    });
+  });
+</script>
+
+</body>
+</html>

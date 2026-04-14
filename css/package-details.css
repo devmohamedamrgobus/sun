@@ -1,0 +1,180 @@
+/* ===== PAGE HERO ===== */
+.page-hero {
+  background: #1e2a4a;
+  color: #fff;
+  padding: 3rem 0;
+  text-align: center;
+}
+.page-hero__title { font-size: 2rem; font-weight: 800; margin-bottom: 0.75rem; }
+.breadcrumb {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0.5rem; font-size: 0.85rem; color: rgba(255,255,255,0.7);
+}
+.breadcrumb a { color: rgba(255,255,255,0.7); transition: color .2s; }
+.breadcrumb a:hover { color: #e8a020; }
+.breadcrumb i { font-size: 0.65rem; color: rgba(255,255,255,0.4); }
+.breadcrumb span[aria-current] { color: #fff; font-weight: 600; }
+
+/* ===== DETAILS WRAPPER ===== */
+.pkg-details { background: #fff; padding-top: 2.5rem; }
+
+/* ===== HERO IMAGE ===== */
+.pkg-details__hero-img {
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+.pkg-details__hero-img img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  display: block;
+  transition: opacity .3s;
+}
+
+/* ===== THUMBNAILS ===== */
+.pkg-details__thumbs {
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 2.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.25rem;
+}
+.pkg-thumb {
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 2.5px solid transparent;
+  cursor: pointer;
+  transition: border-color .2s, transform .2s;
+  padding: 0;
+  background: none;
+}
+.pkg-thumb img {
+  width: 130px;
+  height: 82px;
+  object-fit: cover;
+  display: block;
+}
+.pkg-thumb:hover { transform: translateY(-2px); border-color: #e8a020; }
+.pkg-thumb--active { border-color: #e8a020; }
+
+/* ===== BODY SECTIONS ===== */
+.pkg-details__body {
+  max-width: 820px;
+}
+
+.pkg-section { margin-bottom: 2.5rem; }
+
+.pkg-section__title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #1e2a4a;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.4rem;
+}
+.pkg-section__icon { font-size: 1.1rem; }
+.pkg-section__icon--gold { color: #e8a020; }
+
+.pkg-section__divider {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 1rem;
+}
+.pkg-section__divider span {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #ccc;
+  display: inline-block;
+}
+.pkg-section__divider span.active {
+  width: 26px; border-radius: 4px;
+  background: #e8a020;
+}
+
+.pkg-section__text {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.85;
+}
+
+/* ===== ACTIVITIES LIST ===== */
+.pkg-activities {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+.pkg-activity {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.88rem;
+  color: #444;
+  line-height: 1.6;
+}
+.pkg-activity--sub { padding-right: 1.5rem; }
+
+.pkg-activity__icon {
+  color: #aaa;
+  font-size: 0.85rem;
+  margin-top: 0.2rem;
+  flex-shrink: 0;
+  width: 16px;
+  text-align: center;
+}
+.pkg-activity__icon--gold { color: #e8a020; }
+
+/* ===== SAFETY LIST ===== */
+.pkg-safety {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.pkg-safety li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  font-size: 0.88rem;
+  color: #444;
+  line-height: 1.7;
+}
+.pkg-safety__bullet {
+  color: #e8a020;
+  font-size: 0.6rem;
+  margin-top: 0.45rem;
+  flex-shrink: 0;
+}
+.pkg-safety li strong {
+  color: #1e2a4a;
+  font-weight: 700;
+  margin-left: 0.3rem;
+}
+
+/* ===== FOOTER SHARED ===== */
+.footer__contact-list {
+  display: flex; flex-direction: column; gap: 0.85rem;
+}
+.footer__contact-list li {
+  display: flex; align-items: flex-start; gap: 0.6rem;
+  font-size: 0.82rem; color: rgba(255,255,255,0.75); line-height: 1.5;
+}
+.footer__contact-icon {
+  color: #e8a020; font-size: 0.85rem; margin-top: 0.1rem; flex-shrink: 0;
+}
+.footer__tagline {
+  font-size: 0.78rem; color: rgba(255,255,255,0.6);
+  line-height: 1.7; margin-bottom: 1rem;
+  max-width: 260px; margin-left: auto; margin-right: auto;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 767px) {
+  .page-hero__title { font-size: 1.5rem; }
+  .pkg-details__hero-img img { height: 240px; }
+  .pkg-thumb img { width: 90px; height: 58px; }
+  .footer__inner { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,24 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem 0 3rem;
+}
+
+.pagination__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.pagination__dot:hover { background: #aaa; transform: scale(1.2); }
+
+.pagination__dot--active {
+  background: var(--color-gold);
+  width: 28px;
+  border-radius: 5px;
+}
