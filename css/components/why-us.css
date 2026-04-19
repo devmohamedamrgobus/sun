@@ -74,3 +74,21 @@
   font-size: var(--font-small);
   opacity: 0.9;
 }
+
+/* ---------- TABLET (≤ 1023px) ---------- */
+@media (max-width: 1023px) {
+  .why-us__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-us__stats {
+    flex-wrap: wrap;
+  }
+}
+
+/* ---------- MOBILE (< 768px) ---------- */
+@media (max-width: 767px) {
+  .why-us__grid {
+    grid-template-columns: 1fr;
+  }
+}

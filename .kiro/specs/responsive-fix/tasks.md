@@ -1,0 +1,39 @@
+# Tasks — Responsive Fix
+
+- [x] 1. CSS Architecture Consolidation
+  - [x] 1.1 Remove inline responsive media query blocks from the bottom of `css/main.css` (the `@media (max-width: 1023px)` and `@media (max-width: 767px)` blocks) — these rules will be moved to their respective component CSS files
+  - [x] 1.2 Refactor `css/responsive.css` to contain only cross-cutting responsive rules: CSS variable overrides for mobile font sizes, body-level adjustments, and section spacing — remove component-specific rules that will now live in component files
+  - [x] 1.3 Ensure all 4 HTML pages load the necessary CSS files: add `css/responsive.css` link to `about.html`, `packages.html`, and `package-details.html` (index.html already loads it); also add component CSS links (`css/components/navbar.css`, `css/components/footer.css`, etc.) to pages that need them
+- [x] 2. Navbar Mobile Menu
+  - [x] 2.1 Add a `<button class="navbar__toggle" aria-label="القائمة" aria-expanded="false">` hamburger button element inside `.navbar__inner` in all 4 HTML files, with a Font Awesome bars icon (`<i class="fas fa-bars"></i>`)
+  - [x] 2.2 Add CSS styles in `css/components/navbar.css`: `.navbar__toggle` hidden on desktop (`display: none` at ≥ 1024px), visible as a 44px × 44px touch target on mobile; `.navbar__links--open` state that displays links as a vertical stacked list below the navbar
+  - [x] 2.3 Add a small inline `<script>` (or a shared JS snippet) at the bottom of each HTML page to toggle `.navbar__links--open` class on `.navbar__links` when `.navbar__toggle` is clicked, and update `aria-expanded` attribute
+- [x] 3. Logo and Image Responsive Scaling
+  - [x] 3.1 In all 4 HTML files, change the navbar logo `<img>` from `width="170"` (or `width="170px"`) to a CSS class approach: remove the HTML `width` attribute and add a CSS rule in `css/components/navbar.css` for `.navbar__logo img` with `width: 170px` on desktop and `max-width: 120px` on mobile (< 768px)
+  - [x] 3.2 In all HTML files with footer logos, change `<img width="120">` to use CSS: remove the HTML `width` attribute and add a CSS rule in `css/components/footer.css` for `.footer__logo img` with `width: 120px` on desktop and `max-width: 90px` on mobile
+  - [x] 3.3 In `css/package-details.css`, update `.pkg-thumb img` to use flexible sizing: replace fixed `width: 130px; height: 82px` with percentage-based or `min-width`/`max-width` approach, and add a tablet breakpoint for intermediate sizing
+- [x] 4. Grid Tablet Breakpoints (Component CSS)
+  - [x] 4.1 Add `@media (max-width: 1023px)` to `css/components/why-us.css`: set `.why-us__grid` to `grid-template-columns: repeat(2, 1fr)` and `.why-us__stats` to `flex-wrap: wrap`
+  - [x] 4.2 Add `@media (max-width: 1023px)` to `css/components/gallery.css`: set `.gallery__grid` to `grid-template-columns: repeat(2, 1fr)`
+  - [x] 4.3 Add `@media (max-width: 1023px)` to `css/components/testimonials.css`: set `.testimonials__grid` to `grid-template-columns: repeat(2, 1fr)` and `.testimonials__grid--sm` to `grid-template-columns: repeat(2, 1fr)`
+  - [x] 4.4 Add `@media (max-width: 1023px)` to `css/components/contact.css`: set `.contact__inner` to `grid-template-columns: 1fr`
+  - [x] 4.5 Add `@media (max-width: 1023px)` to `css/components/footer.css`: set `.footer__inner` to `grid-template-columns: 1fr 1fr`
+  - [x] 4.6 Add `@media (max-width: 1023px)` to `css/components/destinations.css`: set `.destinations__grid` to `grid-template-columns: repeat(2, 1fr)`
+- [x] 5. Grid Mobile Breakpoints (Component CSS)
+  - [x] 5.1 Add `@media (max-width: 767px)` to `css/components/why-us.css`: set `.why-us__grid` to `grid-template-columns: 1fr`
+  - [x] 5.2 Add `@media (max-width: 767px)` to `css/components/gallery.css`: set `.gallery__grid` to `grid-template-columns: repeat(2, 1fr)`
+  - [x] 5.3 Add `@media (max-width: 767px)` to `css/components/testimonials.css`: set `.testimonials__grid` to `grid-template-columns: 1fr` and `.testimonials__grid--sm` to `grid-template-columns: repeat(2, 1fr)`
+  - [x] 5.4 Add `@media (max-width: 767px)` to `css/components/contact.css`: set `.contact__inner` to `grid-template-columns: 1fr`
+  - [x] 5.5 Add `@media (max-width: 767px)` to `css/components/footer.css`: set `.footer__inner` to `grid-template-columns: 1fr`
+  - [x] 5.6 Add `@media (max-width: 767px)` to `css/components/destinations.css`: set `.destinations__grid` to `grid-template-columns: 1fr`
+- [x] 6. Hero and Search Bar Mobile Fixes
+  - [x] 6.1 Add `@media (max-width: 767px)` to `css/components/hero.css`: reduce `.hero__title` font-size to ~1.3rem, add `.hero__subtitle` font-size ~0.85rem, reduce `.hero` padding to `3rem 0 5rem`
+  - [x] 6.2 Add `@media (max-width: 767px)` to `css/components/search-bar.css`: stack `.search-bar__fields` vertically (`flex-direction: column`), hide `.search-avatar` (`display: none`), adjust padding and margins
+  - [x] 6.3 Add `@media (max-width: 767px)` to `css/components/top-bar.css`: stack `.top-bar__inner` vertically with centered text
+- [x] 7. Touch Targets and Mobile Spacing
+  - [x] 7.1 Add mobile touch target rules in `css/responsive.css`: ensure `.nav-link`, `.btn-login`, `.btn-gold`, `.pkg-filter`, `.form-row input`, `.form-row textarea`, `.contact__submit`, `.search-box__btn`, and other interactive elements have `min-height: 44px` and adequate padding at < 768px
+  - [x] 7.2 Add mobile spacing adjustments in `css/responsive.css`: reduce `.section` padding to ~`3rem 0`, adjust `.container` padding, and optionally scale body `font-size` slightly for mobile readability
+- [x] 8. Page-Specific CSS Cleanup
+  - [x] 8.1 Update `css/about.css` responsive blocks: ensure `.test-grid--4col` has tablet (2-col) and mobile (1-col) breakpoints, remove any footer rules now handled by component CSS
+  - [x] 8.2 Update `css/packages.css` responsive blocks: ensure `.pkg-grid` has tablet (2-col) and mobile (1-col) breakpoints, remove duplicate footer rules
+  - [x] 8.3 Update `css/package-details.css` responsive blocks: add tablet breakpoint for thumbnails, ensure footer rules are consistent, improve hero image mobile sizing

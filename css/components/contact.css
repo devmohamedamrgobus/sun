@@ -80,3 +80,17 @@
   padding: 0.7rem 2.5rem;
   font-size: 1rem;
 }
+
+/* ---------- TABLET (≤ 1023px) ---------- */
+@media (max-width: 1023px) {
+  .contact__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- MOBILE (< 768px) ---------- */
+@media (max-width: 767px) {
+  .contact__inner {
+    grid-template-columns: 1fr;
+  }
+}

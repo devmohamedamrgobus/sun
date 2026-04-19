@@ -47,3 +47,22 @@
   align-items: center;
   gap: 0.3rem;
 }
+
+/* ── Mobile ── */
+@media (max-width: 767px) {
+  .top-bar__inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .top-bar__social {
+    justify-content: center;
+  }
+
+  .top-bar__contact {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+}
