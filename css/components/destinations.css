@@ -115,3 +115,17 @@
 }
 
 .details-link:hover { text-decoration: underline; }
+
+/* ---------- TABLET (≤ 1023px) ---------- */
+@media (max-width: 1023px) {
+  .destinations__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- MOBILE (< 768px) ---------- */
+@media (max-width: 767px) {
+  .destinations__grid {
+    grid-template-columns: 1fr;
+  }
+}

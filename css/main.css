@@ -709,27 +709,4 @@ body {
   color: rgba(255,255,255,.45);
 }
 
-/* ---------- RESPONSIVE ---------- */
-@media (max-width: 1023px) {
-  .why-grid { grid-template-columns: repeat(2, 1fr); }
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-  .footer__inner { grid-template-columns: 1fr 1fr; }
-}
 
-@media (max-width: 767px) {
-  .topbar__inner { flex-direction: column; gap: 0.4rem; text-align: center; }
-  .navbar__links { display: none; }
-  .hero { padding: 3rem 0 5rem; }
-  .hero__title { font-size: 1.5rem; }
-  .search-box { margin: -2rem 1rem 0; padding: 1rem; }
-  .search-box__fields { flex-direction: column; }
-  .search-wrap__avatar { display: none; }
-  .cards-grid { grid-template-columns: 1fr; }
-  .why-grid { grid-template-columns: repeat(2, 1fr); }
-  .stats-bar { flex-wrap: wrap; gap: 1.5rem; }
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
-  .test-grid { grid-template-columns: 1fr; }
-  .test-grid--sm { grid-template-columns: repeat(2, 1fr); }
-  .contact__inner { grid-template-columns: 1fr; }
-  .footer__inner { grid-template-columns: 1fr; }
-}

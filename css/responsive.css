@@ -1,30 +1,4 @@
-/* Mobile First — base styles target mobile */
-
-/* Tablet (≥ 768px) */
-@media (min-width: 768px) {
-  .destinations__grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .search-bar__fields {
-    flex-direction: row;
-  }
-
-  .top-bar__inner {
-    flex-direction: row;
-  }
-}
-
-/* Desktop (≥ 1024px) */
-@media (min-width: 1024px) {
-  .destinations__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .navbar__links {
-    display: flex;
-  }
-}
+/* Cross-cutting responsive rules — variable overrides, body-level, section spacing */
 
 /* Mobile (< 768px) */
 @media (max-width: 767px) {
@@ -33,63 +7,136 @@
     --font-section-title: 1.3rem;
   }
 
-  .top-bar__inner {
-    flex-direction: column;
-    gap: 0.4rem;
-    text-align: center;
+  /* ── Touch Targets (44px minimum) ── */
+
+  /* Navigation links (inside mobile menu) */
+  .navbar__links .nav-link {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
   }
 
-  .navbar__links {
-    display: none;
+  /* Login button */
+  .btn-login {
+    min-height: 44px;
+    padding: 0.6rem 1.3rem;
   }
 
-  .navbar__inner {
-    justify-content: space-between;
+  /* Gold CTA buttons */
+  .btn-gold {
+    min-height: 44px;
+    padding: 0.65rem 1.6rem;
   }
 
-  .hero {
-    padding: 3rem 0 5rem;
+  /* Generic .btn */
+  .btn {
+    min-height: 44px;
   }
 
-  .search-bar {
-    margin: -2rem 1rem 0;
-    padding: 1rem;
+  /* Package filter pills */
+  .pkg-filter {
+    min-height: 44px;
+    padding: 0.55rem 1.1rem;
   }
 
-  .search-bar__fields {
-    flex-direction: column;
+  /* Contact form inputs and textarea */
+  .form-row input,
+  .form-row textarea {
+    min-height: 44px;
+    padding: 0.7rem 0.9rem;
   }
 
-  .search-avatar {
-    display: none;
+  /* Contact form (component variant) */
+  .form-field__input {
+    min-height: 44px;
+    padding: 0.7rem 0.9rem;
   }
 
-  .destinations__grid {
-    grid-template-columns: 1fr;
+  /* Contact submit button */
+  .contact__submit {
+    min-height: 44px;
+    padding: 0.7rem 2.5rem;
   }
 
-  .chat-icon {
-    top: 0.75rem;
-    right: 0.75rem;
-    width: 40px;
-    height: 40px;
-    font-size: 1.1rem;
+  /* Search box button (main.css variant) */
+  .search-box__btn {
+    min-height: 44px;
+    padding: 0.7rem 1rem;
+  }
+
+  /* Search field inputs */
+  .search-field input,
+  .search-field select,
+  .search-field__input {
+    min-height: 44px;
+    padding: 0.7rem 0.8rem;
+  }
+
+  /* Package card buttons */
+  .pkg-card__btn {
+    min-height: 44px;
+    padding: 0.55rem 1rem;
+  }
+
+  /* Package search input */
+  .pkg-search input {
+    min-height: 44px;
+  }
+
+  /* Filter checkbox labels */
+  .pkg-filter-check {
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Footer social links */
+  .footer__social a {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  /* Top bar social links */
+  .topbar__social a {
+    min-width: 44px;
+    min-height: 44px;
   }
 }
 
-/* Why Us */
+/* ── Mobile Spacing & Typography ── */
 @media (max-width: 767px) {
-  .why-us__grid { grid-template-columns: repeat(2, 1fr); }
-  .why-us__stats { flex-wrap: wrap; gap: 1.5rem; }
-  .gallery__grid { grid-template-columns: repeat(2, 1fr); }
-  .testimonials__grid { grid-template-columns: 1fr; }
-  .testimonials__grid--sm { grid-template-columns: repeat(2, 1fr); }
-  .contact__inner { grid-template-columns: 1fr; }
-  .footer__inner { grid-template-columns: 1fr; }
-}
+  /* Slightly smaller body font for mobile readability */
+  body {
+    font-size: 0.9rem;
+  }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .why-us__grid { grid-template-columns: repeat(2, 1fr); }
-  .gallery__grid { grid-template-columns: repeat(2, 1fr); }
-  .footer__inner { grid-template-columns: 1fr 1fr; }
+  /* Reduce section vertical padding */
+  .section {
+    padding: 3rem 0;
+  }
+
+  /* Tighter container side padding on small screens */
+  .container {
+    padding: 0 1rem;
+  }
+
+  /* Section head spacing */
+  .section__head {
+    margin-bottom: 1.75rem;
+  }
+
+  /* Contact section */
+  .contact {
+    padding: 3rem 0;
+  }
+
+  /* Footer padding */
+  .footer {
+    padding: 2rem 0 0;
+  }
+
+  .footer__inner {
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 }

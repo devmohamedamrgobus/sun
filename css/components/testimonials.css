@@ -77,3 +77,25 @@
 .testimonial-card--sm {
   padding: 1rem;
 }
+
+/* ---------- TABLET (≤ 1023px) ---------- */
+@media (max-width: 1023px) {
+  .testimonials__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonials__grid--sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---------- MOBILE (< 768px) ---------- */
+@media (max-width: 767px) {
+  .testimonials__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials__grid--sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

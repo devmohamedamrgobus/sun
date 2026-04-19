@@ -12,6 +12,18 @@
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
+  <!-- Component CSS -->
+  <link rel="stylesheet" href="css/components/top-bar.css">
+  <link rel="stylesheet" href="css/components/navbar.css">
+  <link rel="stylesheet" href="css/components/hero.css">
+  <link rel="stylesheet" href="css/components/search-bar.css">
+  <link rel="stylesheet" href="css/components/destinations.css">
+  <link rel="stylesheet" href="css/components/why-us.css">
+  <link rel="stylesheet" href="css/components/testimonials.css">
+  <link rel="stylesheet" href="css/components/contact.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <!-- Responsive overrides (must be last) -->
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 
@@ -43,7 +55,7 @@
         <circle cx="13" cy="13" r="3" fill="#fff"/>
       </svg> -->
       <span class="navbar__logo-text">
-        <img src="img/sunsnow.png" width="170px" alt="">
+        <img src="img/sunsnow.png" alt="">
       </span>
     </div>
     <ul class="navbar__links" role="list">
@@ -53,6 +65,9 @@
       <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
     </ul>
     <button class="btn-login" type="button">تسجيل الدخول</button>
+    <button class="navbar__toggle" aria-label="القائمة" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
   </div>
 
 </nav>
@@ -443,7 +458,7 @@
     <div class="footer__brand">
       <div class="footer__logo">
     
-                <img src="img/sunsnow.png" width="120px" alt="">
+                <img src="img/white.png" alt="">
 
       </div>
       <p class="footer__tagline">اكتشف العالم معنا بكل سهولة وراحة</p>
@@ -459,6 +474,20 @@
     <p>© 2025 Sunsnow. جميع الحقوق محفوظة.</p>
   </div>
 </footer>
+
+<!-- Mobile nav toggle -->
+<script>
+  (function() {
+    var toggle = document.querySelector('.navbar__toggle');
+    var links = document.querySelector('.navbar__links');
+    if (toggle && links) {
+      toggle.addEventListener('click', function() {
+        var open = links.classList.toggle('navbar__links--open');
+        toggle.setAttribute('aria-expanded', open);
+      });
+    }
+  })();
+</script>
 
 </body>
 </html>

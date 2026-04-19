@@ -47,6 +47,11 @@
   color: var(--color-white);
 }
 
+.footer__logo img {
+  width: 120px;
+  height: auto;
+}
+
 .footer__tagline {
   font-size: var(--font-small);
   color: rgba(255,255,255,0.7);
@@ -69,4 +74,23 @@
   padding: 1rem;
   font-size: var(--font-small);
   color: rgba(255,255,255,0.5);
+}
+
+/* ---------- TABLET (≤ 1023px) ---------- */
+@media (max-width: 1023px) {
+  .footer__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ---------- MOBILE (< 768px) ---------- */
+@media (max-width: 767px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__logo img {
+    max-width: 90px;
+    width: auto;
+  }
 }
